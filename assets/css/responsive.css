@@ -305,4 +305,13 @@
     .sec_2_1 {
         padding: 20px;
     }
+    .accordions li .acc_title {
+        font-size: 18px;
+      }
+      .faq_det_set ul.accordions li .acc_title {
+        font-size: 15px;
+      }
+      .faq_det_set ul.accordions li .acc_desc {
+        padding-right: 20px;
+      }
 }

@@ -668,6 +668,7 @@ a.logo img {
     border-radius: 5px;
     padding: 30px;
     margin-top: 40px;
+    height: 100%;
 }
 
 .sec_2_1 h3 {
@@ -1231,5 +1232,55 @@ a.logo img {
   .ss_2 ul:nth-child(even) {
     margin-left: 4rem;
     margin-right: -4rem;
+  }
+  
+  .accordions {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    counter-reset: list;
+  }
+  .accordions li {
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.08);
+    margin-bottom: 20px;
+  }
+  .accordions li .acc_title {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.25;
+    padding-right: 20px;
+  }
+  .accordions li .acc_title span {
+    padding-right: 20px;
+  }
+  .accordions li .acc_title span::before {
+    counter-increment: list;
+    content: counter(list) ".";
+    margin-right: 5px;
+  }
+  .accordions li .acc_title i {
+    color: #f04e23;
+    font-size: 120%;
+  }
+  .accordions li .acc_desc {
+    padding: 0 10% 30px 20px;
+  }
+  .accordions li .acc_desc p:last-child {
+    margin: 0;
+  }
+  .accordions li .acc_desc ul li {
+    margin-bottom: 4px;
+  }
+  .accordions li .acc_desc ul li:before {
+    font-size: 40%;
+    line-height: 28px;
+    color: #111827;
+  }
+  .accordions li.active .acc_title i.fa-plus-square:before {
+    content: "\f146";
   }
   
