@@ -49,7 +49,7 @@ $(document).ready(function () {
             $(this).parent().find('ul.dropdown').slideDown();
         }
     });
-    $(".s3_slider").slick({
+    $(".sec_3_slider").slick({
         dots: true,
         infinite: true,
         speed: 1200,

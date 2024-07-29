@@ -158,7 +158,7 @@
         background: rgba(33, 41, 49, 0.9);
     }
 
-    .mainBanner .mb_1 h1 {
+    .mainBanner .banner_content h1 {
         line-height: 50px;
     }
 
@@ -170,7 +170,7 @@
         height: 100%;
     }
 
-    .mainBanner .mb_1>ul li {
+    .mainBanner .banner_content>ul li {
         margin-bottom: 6px;
     }
 
@@ -178,11 +178,11 @@
         font-size: 15px;
     }
 
-    .s1_1 {
+    .sec_1_1 {
         padding: 20px;
     }
 
-    .s1_1 h3 {
+    .sec_1_1 h3 {
         font-size: 20px;
     }
 }
@@ -192,13 +192,13 @@
         font-size: 15px;
     }
 
-    .mainBanner .mb_1 h1 {
+    .mainBanner .banner_content h1 {
         font-size: 32px;
         line-height: 40px;
         margin-bottom: 10px;
     }
 
-    .mainBanner .mb_1>p {
+    .mainBanner .banner_content>p {
         margin-bottom: 20px;
     }
 
@@ -218,23 +218,23 @@
         font-size: 18px;
     }
 
-    .mainBanner .mb_1 .btn_group a:first-child {
+    .mainBanner .banner_content .btn_group a:first-child {
         min-width: 150px;
     }
 
-    .s1_1 h3 {
+    .sec_1_1 h3 {
         font-size: 18px;
     }
 
-    .s3_1 h3 {
+    .sec_3_1 h3 {
         font-size: 20px;
     }
 
-    .s3_1 .author p {
+    .sec_3_1 .author p {
         font-size: 16px;
     }
 
-    .s4 p {
+    .sec_4 p {
         font-size: 16px;
     }
 
@@ -292,17 +292,17 @@
     h2, .h2 {
         font-size: 24px;
     }
-    .spad {
+    .sec_padding {
         padding: 1rem 0;
     }
     .section_head {
         margin-bottom: 30px;
     }
-    .s2_1 {
+    .sec_2_1 {
         margin-top: 0;
         margin-bottom: 30px;
     }
-    .s2_1 {
+    .sec_2_1 {
         padding: 20px;
     }
 }
