@@ -105,24 +105,23 @@
 
                     <h3>Let’s Talk! </h3>
                     <p>Please, fill this form, and one of our consultants will contact you shortly. </p>
-                    <form>
+                    <form id="contact_form">
                         <div class="cont_form">
                             <div class="row gx-5">
                                 <div class="col-md-6">
-                                    <input type="text" placeholder="Your Name" name="customer_full_name">
+                                    <input type="text" placeholder="Your Name" id="c_name" name="customer_full_name" required>
                                 </div>
                                 <div class="col-md-6">
-                                    <input type="text" placeholder="Your Phone Number" name="customer_phone">
-                                    <input type="hidden" name="leadsource" value="contact form">
+                                    <input type="tel" placeholder="Your Phone Number" id="c_phone" name="customer_phone"  required>
                                 </div>
                                 <div class="col-md-6">
-                                    <input type="email" placeholder="Your E-mail" name="customer_email">
+                                    <input type="email" placeholder="Your E-mail" id="c_email" name="customer_email" required>
                                 </div>
                                 <div class="col-md-6">
-                                    <input type="text" placeholder="Subject" name="subject">
+                                    <input type="text" placeholder="Subject" id="c_subject" name="subject">
                                 </div>
                                 <div class="col-md-12">
-                                    <textarea placeholder="Type Message" name="msg"></textarea>
+                                    <textarea placeholder="Type Message" id="c_message" name="msg"></textarea>
                                     <div class="checkbox-wrap">
                                         <input type="checkbox" id="check1" name="checkbox1" value="YES">
                                         <label for="check1"> I agree with Policy and provide my consent to receive B2B
@@ -140,7 +139,7 @@
                                                 target="_blank" href="privacy-policy.html">Privacy
                                                 Policy</a></label>
                                     </div>
-                                    <input type="submit" value="Send a message">
+                                    <input type="submit" id="c_submit" value="Send a message">
                                 </div>
                             </div>
                     </form>

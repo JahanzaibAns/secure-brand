@@ -111,9 +111,139 @@ $('.closeico,.overlay').click(function () {
 });
 
 document.addEventListener('DOMContentLoaded', function() {
+    
     document.getElementById('phoneNum2').addEventListener('input', function (e) {
         var x = e.target.value.replace(/\D/g, '').match(/(\d{0,3})(\d{0,3})(\d{0,4})/);
         e.target.value = !x[2] ? x[1] : '(' + x[1] + ') ' + x[2] + (x[3] ? '-' + x[3] : '');
     });
     
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('g_phone').addEventListener('input', function (e) {
+        var x = e.target.value.replace(/\D/g, '').match(/(\d{0,3})(\d{0,3})(\d{0,4})/);
+        e.target.value = !x[2] ? x[1] : '(' + x[1] + ') ' + x[2] + (x[3] ? '-' + x[3] : '');
+    });
+    
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('c_phone').addEventListener('input', function (e) {
+        var x = e.target.value.replace(/\D/g, '').match(/(\d{0,3})(\d{0,3})(\d{0,4})/);
+        e.target.value = !x[2] ? x[1] : '(' + x[1] + ') ' + x[2] + (x[3] ? '-' + x[3] : '');
+    });
+    
+});
+
+const saveDataAndRedirect = (formId, fields) => {
+    const fullName = $(`#${fields.fullName}`).val();
+    const email = $(`#${fields.email}`).val();
+    const phoneNo = $(`#${fields.phoneNo}`).val();
+    const description = fields.description ? $(`#${fields.description}`).val() : '';
+    const subject = fields.subject ? $(`#${fields.subject}`).val() : '';
+
+    const dataToStore = { fullName, email, phoneNo, description, subject };
+
+    // Show loader
+    $(`#${fields.submit}`).html('Submitting... <i class="fa fa-spinner fa-spin"></i>');
+
+    // Call the API to send data
+    sendDataToAPI(dataToStore, fields, () => {
+        // Callback: Redirect to 'thank you' page after API call is complete
+        // window.location.href = 'thankyou-stepper.html';
+    });
+};
+
+const sendDataToAPI = (data, fields, callback) => {
+    const apiUrl = 'http://192.168.1.112:8000/api/contact';
+
+    // Prepare the data for the API request
+    const apiData = {
+        fullName: data.fullName,
+        phoneNo: data.phoneNo,
+        email: data.email,
+        description: data.description,
+        subject: data.subject
+    };
+
+    // Make a POST request to the API with JSON data in the body
+    $.ajax({
+        url: apiUrl,
+        type: 'POST',
+        contentType: 'application/json',
+        data: JSON.stringify(apiData),
+        success: function (response) {
+            console.log('API response:', response);
+            // Handle the API response if needed
+            if (typeof callback === 'function') {
+                callback(); // Call the callback after API is complete
+            }
+        },
+        error: function (error) {
+            console.error('Error sending data to API:', error);
+            // Handle errors if needed
+            // Hide loader and show error message
+            $(`#${fields.submit}`).html('Register Now');
+        }
+    });
+};
+
+$(document).ready(function () {
+    // Define form details
+    const forms = {
+        popup_form: {
+            fullName: 'name',
+            email: 'email',
+            phoneNo: 'phoneNum2',
+            submit: 'popup_submit'
+        },
+        download_guide: {
+            fullName: 'g_name',
+            email: 'g_email',
+            phoneNo: 'g_phone',
+            description: 'g_message',
+            submit: 'g_submit'
+        },
+        contact_form: {
+            fullName: 'c_name',
+            email: 'c_email',
+            phoneNo: 'c_phone',
+            description: 'c_message',
+            subject: 'c_subject',
+            submit: 'c_submit'
+        }
+    };
+
+    // Initialize form validation for each form
+    Object.keys(forms).forEach(formId => {
+        const fields = forms[formId];
+        $(`#${formId}`).validate({
+            rules: {
+                fullName: "required",
+                email: {
+                    required: true,
+                    email: true
+                },
+                phoneNo: {
+                    required: true,
+                }
+            },
+            messages: {
+                fullName: "Please enter your first name",
+                email: "Please enter a valid email address",
+                phoneNo: {
+                    required: "Please enter your phone number",
+                }
+            },
+            submitHandler: function (form) {
+                // Prevent default form submission
+                event.preventDefault();
+
+                // Form is valid, call the API and redirect
+                saveDataAndRedirect(formId, fields);
+            }
+        });
+    });
+
+
 });

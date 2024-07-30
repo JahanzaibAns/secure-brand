@@ -2137,3 +2137,6 @@ ul.terms-service-list li {
 .fld-btn button:hover {
     transform: scale(1.03);
 }
+.error{
+    color: red;
+}
