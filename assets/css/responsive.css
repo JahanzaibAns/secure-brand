@@ -55,7 +55,7 @@
         margin: 2px 0;
         display: block;
         padding: 0;
-        opacity: 0;
+        /* opacity: 0; */
         margin-bottom: 10px;
         transition: opacity 0.5s ease-in-out;
     }
@@ -203,7 +203,7 @@
     }
 
     .mainBanner .mb_2_2 {
-        margin: -20px 20px 0 -2rem;
+        margin: 0 0px 0 0rem;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -218,7 +218,7 @@
         font-size: 18px;
     }
 
-    .mainBanner .banner_content .btn_group a:first-child {
+    .mainBanner .banner_content .btn_flex a:first-child {
         min-width: 150px;
     }
 
@@ -306,10 +306,11 @@
     .sec_2_1 {
         margin-top: 0;
         margin-bottom: 30px;
-    }
-
-    .sec_2_1 {
         padding: 20px;
+        height: fit-content;
+    }
+    .cont_2 .cs_1{
+        margin-bottom: 20px;
     }
 
     .accordions li .acc_title {

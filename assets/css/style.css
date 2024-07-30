@@ -455,11 +455,11 @@ a.logo img {
     line-height: 25px;
 }
 
-.mainBanner .banner_content .btn_group {
+.mainBanner .banner_content .btn_flex {
     margin-bottom: 20px;
 }
 
-.mainBanner .banner_content .btn_group a:first-child {
+.mainBanner .banner_content .btn_flex a:first-child {
     min-width: 250px;
 }
 
@@ -887,7 +887,7 @@ a.logo img {
     margin: 0 17% 40px;
 }
 
-.btn_group a {
+.btn_flex a {
     margin-right: 25px;
 }
 
@@ -1133,18 +1133,18 @@ a.logo img {
     /*margin-top: -2rem;*/
 }
 
-.get_trademark_sec .btn_group .outlined_btn {
+.get_trademark_sec .btn_flex .outlined_btn {
     color: #4a2eef;
     border-color: #fff;
 }
 
-.get_trademark_sec .btn_group .outlined_btn:first-child {
+.get_trademark_sec .btn_flex .outlined_btn:first-child {
     border-color: transparent;
     margin-right: 0;
     color: #fff;
 }
 
-.get_trademark_sec .btn_group .outlined_btn:hover {
+.get_trademark_sec .btn_flex .outlined_btn:hover {
     color: #4a2eef;
 }
 
