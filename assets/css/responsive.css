@@ -381,4 +381,10 @@
     .faq_det_set ul.accordions li .acc_desc {
         padding-right: 20px;
     }
+    .contact_sec .section_head {
+        margin-bottom: 40px;
+      }
+      .cont_form {
+        padding: 0 5%;
+      }
 }
