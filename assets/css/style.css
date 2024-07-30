@@ -1825,10 +1825,83 @@ a.logo img {
     text-align: left;
     margin-bottom: 15px;
 }
+
 .checkbox-wrap label {
     line-height: 1.3;
 }
+
 .checkbox-wrap input {
     margin-top: 4px;
     width: auto !important;
+}
+
+.terms-service-list-item {
+    margin-bottom: 30px;
+    line-height: 30px;
+    font-size: 16px;
+    color: #747A85;
+}
+
+.terms-page {
+    padding: 4rem 0;
+}
+ul.terms-service-list {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding-left: 40px;
+    list-style-type: disc;
+}
+
+ul.terms-service-list li {
+    margin-bottom: 2px;
+}
+
+.faq-questomg-box {
+    width: 100%;
+    float: left;
+}
+
+.faq-question-title {
+    color: #4b5a6a;
+    font-size: 29px;
+    line-height: 29px;
+}
+
+.faq-question-title.about-title {
+    margin-top: 0px;
+    font-size: 28px;
+    color: #353B41;
+}
+
+.faq-question-title.about-title.text-center {
+    text-align: center;
+}
+
+.faa-paragraph {
+    margin-bottom: 0px;
+    padding: 13px 0px 9px;
+    color: #747A85;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: left;
+    letter-spacing: 0.16px;
+    list-style-type: none;
+}
+
+.faa-paragraph.trem-font-font {
+    font-size: 16px;
+    color: #747A85;
+}
+.faa-paragraph.trem-font-font.bold-font {
+    font-size: 28px;
+    color: #353B41;
+}
+.terms .roman {
+    list-style: upper-roman;
+}
+.terms ul {
+    padding-left: 40px;
+    line-height: 25px;
+    font-size: 16px;
+    color: #333;
 }
