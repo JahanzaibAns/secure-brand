@@ -1430,3 +1430,66 @@ a.logo img {
     display: inline-block;
     margin-bottom: 10px;
 }
+.smt_sec .section_head p {
+    width: 800px;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  
+.smt_1 {
+    border: 2px solid #f04e23;
+    height: 100%;
+    background: #5f6974;
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .smt_1::before {
+    content: "";
+    position: absolute;
+    bottom: -36%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 100%;
+    background: transparent url(../images/home/elem7.svg) no-repeat;
+    background-size: contain;
+    z-index: -1;
+  }
+  .smt_1 .smt_1_1 {
+    background: #fff;
+    width: 100%;
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+  .smt_1 h3 {
+    font-size: 24px;
+    color: #fff;
+    padding: 0 15%;
+  }
+  .smt_1 h4 {
+    font-size: 28px;
+    color: #ffb600;
+  }
+  .smt_1 p {
+    color: #fff;
+    padding: 0 30px;
+    margin-bottom: 40px;
+    flex: 1;
+  }
+  .smt_1 .theme-btn {
+    margin-bottom: 30px;
+    width: 180px;
+  }
+  .innerBanner_a .mb_2_2 {
+    margin: 25px 0 0 0;
+  }
+  .innerBanner_b .mb_2_2 {
+    width: 92%;
+  }

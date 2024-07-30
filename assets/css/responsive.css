@@ -289,29 +289,76 @@
     .section_head h2 {
         margin-top: -1rem;
     }
-    h2, .h2 {
+
+    h2,
+    .h2 {
         font-size: 24px;
     }
+
     .sec_padding {
         padding: 1rem 0;
     }
+
     .section_head {
         margin-bottom: 30px;
     }
+
     .sec_2_1 {
         margin-top: 0;
         margin-bottom: 30px;
     }
+
     .sec_2_1 {
         padding: 20px;
     }
+
     .accordions li .acc_title {
         font-size: 18px;
-      }
-      .faq_det_set ul.accordions li .acc_title {
+    }
+
+    .faq_det_set ul.accordions li .acc_title {
         font-size: 15px;
-      }
-      .faq_det_set ul.accordions li .acc_desc {
+    }
+
+    .faq_det_set ul.accordions li .acc_desc {
         padding-right: 20px;
-      }
+    }
+
+    .smt_sec {
+        margin-top: 40px;
+    }
+
+    .smt_1 h3 {
+        font-size: 18px;
+    }
+
+    .smt_1 h4 {
+        font-size: 24px;
+    }
+
+    .smt_1 .smt_1_1 {
+        height: 120px;
+    }
+
+    .smt_1 p,
+    .smt_1 h3 {
+        padding: 0 15px;
+    }
+
+    .smt_1::before {
+        bottom: -65%;
+    }
+
+    .smt_1 .smt_1_1 {
+        height: 150px;
+    }
+
+    .smt_1 {
+        margin-bottom: 30px;
+        height: auto;
+    }
+
+    .smt_1::before {
+        bottom: -10%;
+    }
 }
