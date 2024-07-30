@@ -1580,3 +1580,78 @@ a.logo img {
 .or_2_1 .theme-btn {
     width: 100%;
 }
+
+.page_head {
+    padding: 1rem 0 3rem 0;
+}
+
+.page_head .breadcrumb {
+    font-size: 20px;
+    font-weight: 600;
+    color: #111827;
+}
+
+.page_head .breadcrumb li {
+    display: flex;
+    align-items: center;
+}
+
+.page_head .breadcrumb a {
+    color: #111827;
+}
+
+.page_head .breadcrumb-item+.breadcrumb-item::before {
+    content: "\f054";
+    font-family: "Font Awesome 5 Pro";
+    font-size: 70%;
+    display: inline-block;
+}
+
+.sidebar_template .section_head h2 {
+    margin-top: 0;
+}
+
+.sidebar_template .section_head p {
+    width: 550px;
+    max-width: 100%;
+    color: rgba(17, 24, 39, 0.45);
+}
+
+.sidebar_template nav .menu {
+    padding-left: 0;
+}
+
+.site_sidebar {
+    position: sticky;
+    top: 80px;
+}
+
+.site_sidebar nav ul {
+    list-style: none;
+    padding: 30px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    display: block;
+}
+
+.site_sidebar nav ul li {
+    display: block;
+    padding: 0;
+}
+
+.site_sidebar nav ul li.active a {
+    background: #f04e23;
+}
+
+.site_sidebar nav ul a {
+    display: block;
+    background: #1270ff;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+.site_sidebar nav ul a:hover {
+    background: #f04e23;
+}

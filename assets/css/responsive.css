@@ -361,4 +361,13 @@
     .smt_1::before {
         bottom: -10%;
     }
+
+    .page_head .breadcrumb {
+        font-size: 16px;
+    }
+
+    .site_sidebar nav .menu {
+        padding: 30px;
+    }
+    
 }
