@@ -369,5 +369,16 @@
     .site_sidebar nav .menu {
         padding: 30px;
     }
-    
+
+    .faq_det_set ul.accordions li .acc_title {
+        font-size: 16px;
+    }
+
+    .faq_det_set ul.accordions li .acc_title {
+        font-size: 15px;
+    }
+
+    .faq_det_set ul.accordions li .acc_desc {
+        padding-right: 20px;
+    }
 }
