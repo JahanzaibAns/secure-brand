@@ -195,7 +195,7 @@
                         <div class="lp-ftrbox">
                             <p>Connect with us</p>
                             <ul>
-                                
+
                                 <li><a href="contact-us.html">Contact Us</a></li>
                             </ul>
 
@@ -270,8 +270,31 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
-    <script src="assets/js/custom.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script>
+        function setButtonURL() {
+            $zopim.livechat.window.show()
+        }
+    </script>
+    <!-- Start of securebrandrights Zendesk Widget script -->
+    <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=be1c9f73-ab3f-4b9c-94c0-63ed551f4753"> </script>
+     <!-- End of securebrandrights Zendesk Widget script -->
+    <script>
+        zE(function () {
+        zE.activate();
+        });
+        zE(function () {
+        $zopim(function () {
+            $zopim.livechat.setOnUnreadMsgs(unread);
+            function unread(number) {
+                if (number >= 1) {
+                    $zopim.livechat.window.show();
+                }
+            }
+        });
+        });
+    </script>
 
 </body>
 

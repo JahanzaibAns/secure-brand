@@ -98,7 +98,8 @@
                                 <a href="javascript:void(0);" class="theme-btn">Get Started</a>
                                 <a href="#howits" class="theme-btn outlined_btn">Learn More</a>
                             </div>
-                            <div class="banner_content_1">Packages start at $99 + USPTO filing fees <a href="#pricing">View
+                            <div class="banner_content_1">Packages start at $99 + USPTO filing fees <a
+                                    href="#pricing">View
                                     Packages </a></div>
                         </div>
                     </div>
@@ -302,7 +303,7 @@
                         <div class="lp-ftrbox">
                             <p>Connect with us</p>
                             <ul>
-                                
+
                                 <li><a href="contact-us.html">Contact Us</a></li>
                             </ul>
 
@@ -364,8 +365,8 @@
                 <p>© Copyright 2024 Secure Brand Rights, LLC. Secure Brand Rights provides information and software
                     only. Secure Brand Rights is not a "lawyer referral service" and does not provide legal advice or
                     participate in any legal representation. Use of Secure Brand Rights is subject to our <a
-                        href="terms-and-conditions.html">Terms of Service</a> and <a
-                        href="privacy-policy.html">Privacy Policy.</a></p>
+                        href="terms-and-conditions.html">Terms of Service</a> and <a href="privacy-policy.html">Privacy
+                        Policy.</a></p>
             </div>
         </div>
     </footer>
@@ -377,8 +378,31 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
-    <script src="assets/js/custom.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script>
+        function setButtonURL() {
+            $zopim.livechat.window.show()
+        }
+    </script>
+    <!-- Start of securebrandrights Zendesk Widget script -->
+    <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=be1c9f73-ab3f-4b9c-94c0-63ed551f4753"> </script>
+     <!-- End of securebrandrights Zendesk Widget script -->
+    <script>
+        zE(function () {
+        zE.activate();
+        });
+        zE(function () {
+        $zopim(function () {
+            $zopim.livechat.setOnUnreadMsgs(unread);
+            function unread(number) {
+                if (number >= 1) {
+                    $zopim.livechat.window.show();
+                }
+            }
+        });
+        });
+    </script>
     <script>
         // Wrap every letter in a span
         var textWrapper = document.querySelector('.ml7 .letters');
@@ -409,6 +433,7 @@
                 delay: 1000
             });
     </script>
+
 </body>
 
 </html>
