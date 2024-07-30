@@ -69,12 +69,24 @@ $(document).ready(function () {
 });
 
 $(".accordions .acc_title").click(function () {
+    $('.accordions li').removeClass('active')
+    $('.acc_desc').slideUp();
+    $(this).parent('li').addClass('active')
+    if (!$(this).next('.acc_desc').is(':visible')) {
+        $(this).next('.acc_desc').slideDown();
+    } else {
         $('.accordions li').removeClass('active')
-        $('.acc_desc').slideUp();
-        $(this).parent('li').addClass('active')
-        if (!$(this).next('.acc_desc').is(':visible')) {
-            $(this).next('.acc_desc').slideDown();
-        } else {
-            $('.accordions li').removeClass('active')
-        }
-    });
+    }
+});
+$("[data-targetit]").on("click", function (e) {
+    $(this).addClass("active");
+    $(this)
+        .siblings()
+        .removeClass("active");
+    var target = $(this).data("targetit");
+    $("." + target)
+        .siblings('[class^="box-"]')
+        .hide();
+    $("." + target).fadeIn();
+    $(".tabViewList").slick("setPosition", 0);
+});

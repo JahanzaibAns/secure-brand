@@ -1175,6 +1175,7 @@ a.logo img {
     right: -25%;
     background-repeat: no-repeat;
 }
+
 .s_serach {
     border: 1px solid rgba(95, 105, 116, 0.5);
     border-radius: 4px;
@@ -1184,37 +1185,42 @@ a.logo img {
     background: #fff;
     position: relative;
     z-index: 1;
-  }
-  .s_serach i {
+}
+
+.s_serach i {
     flex: 0 0 auto;
     padding: 0 0 0 10px;
     color: rgb(17, 24, 39);
-  }
-  .s_serach input {
+}
+
+.s_serach input {
     width: 100px;
     padding: 10px 15px;
     flex: 1;
-  }
-  
-  .ss_2 {
+}
+
+.ss_2 {
     padding-left: 40px;
     position: relative;
     z-index: 1;
-  }
-  .ss_2 ul {
+}
+
+.ss_2 ul {
     list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
     flex-wrap: wrap;
     margin: 0 -15px;
-  }
-  .ss_2 ul li {
+}
+
+.ss_2 ul li {
     flex: 0 0 auto;
     width: 33.33%;
     padding: 15px;
-  }
-  .ss_2 ul li a {
+}
+
+.ss_2 ul li a {
     padding: 15px;
     border-radius: 5px;
     border: 1px solid #333333;
@@ -1223,28 +1229,32 @@ a.logo img {
     text-align: center;
     color: inherit;
     font-weight: 700;
-  }
-  .ss_2 ul li a:hover {
+}
+
+.ss_2 ul li a:hover {
     background: #4a2eef;
     color: #fff;
     border-color: #4a2eef;
-  }
-  .ss_2 ul:nth-child(even) {
+}
+
+.ss_2 ul:nth-child(even) {
     margin-left: 4rem;
     margin-right: -4rem;
-  }
-  
-  .accordions {
+}
+
+.accordions {
     list-style: none;
     padding: 0;
     margin: 0;
     counter-reset: list;
-  }
-  .accordions li {
+}
+
+.accordions li {
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.08);
     margin-bottom: 20px;
-  }
-  .accordions li .acc_title {
+}
+
+.accordions li .acc_title {
     display: flex;
     justify-content: space-between;
     cursor: pointer;
@@ -1253,34 +1263,170 @@ a.logo img {
     font-weight: 500;
     line-height: 1.25;
     padding-right: 20px;
-  }
-  .accordions li .acc_title span {
+}
+
+.accordions li .acc_title span {
     padding-right: 20px;
-  }
-  .accordions li .acc_title span::before {
+}
+
+.accordions li .acc_title span::before {
     counter-increment: list;
     content: counter(list) ".";
     margin-right: 5px;
-  }
-  .accordions li .acc_title i {
-    color: #f04e23;
+}
+
+.accordions li .acc_title i {
+    color: var(--primary);
     font-size: 120%;
-  }
-  .accordions li .acc_desc {
+}
+
+.accordions li .acc_desc {
     padding: 0 10% 30px 20px;
-  }
-  .accordions li .acc_desc p:last-child {
+}
+
+.accordions li .acc_desc p:last-child {
     margin: 0;
-  }
-  .accordions li .acc_desc ul li {
+}
+
+.accordions li .acc_desc ul li {
     margin-bottom: 4px;
-  }
-  .accordions li .acc_desc ul li:before {
+}
+
+.accordions li .acc_desc ul li:before {
     font-size: 40%;
     line-height: 28px;
     color: #111827;
-  }
-  .accordions li.active .acc_title i.fa-plus-square:before {
+}
+
+.accordions li.active .acc_title i.fa-plus-square:before {
     content: "\f146";
-  }
-  
+}
+
+
+.monitor_sec .tab_links {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 10px 0;
+    margin-bottom: 40px;
+    background: #ffffff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    align-items: center;
+}
+
+.monitor_sec .tab_links li {
+    flex: 1;
+}
+
+.monitor_sec .tab_links li.active a {
+    color: var(--primary);
+}
+
+.monitor_sec .tab_links li:last-child a {
+    border: 0;
+}
+
+.monitor_sec .tab_links a {
+    text-align: center;
+    display: block;
+    padding: 5px 10px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.25;
+    height: 100%;
+    border-right: 1px solid rgba(17, 24, 39, 0.2);
+    color: rgba(17, 24, 39, 0.7);
+}
+
+.monitor_sec .tab-content {
+    padding-right: 12%;
+}
+
+.monitor_sec .tab-content h2 {
+    font-size: 20px;
+    font-weight: 500;
+    color: rgba(17, 24, 39, 0.6);
+}
+
+.monitor_sec .tab-content h3 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.monitor_sec .tab-content p,
+.monitor_sec .tab-content ul {
+    margin-bottom: 20px;
+}
+
+
+.ms_1 {
+    background: #fefefe;
+    box-shadow: 0px 4px 30px 1px rgba(72, 82, 98, 0.25);
+    border-radius: 8px;
+    padding: 30px;
+}
+
+.ms_1 strong {
+    display: block;
+    font-size: 36px;
+    font-weight: 500;
+    color: var(--primary);
+}
+
+.ms_1 strong sub {
+    font-size: 22px;
+    bottom: 0;
+}
+
+.ms_1 p {
+    color: rgba(17, 24, 39, 0.6);
+}
+
+.ms_1 ul {
+    margin-bottom: 30px;
+}
+
+.ms_1 ul li {
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.ms_1 a.theme-btn {
+    display: block;
+}
+
+.custom_list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.custom_list li {
+    margin-bottom: 10px;
+    padding-left: 35px;
+    position: relative;
+}
+
+.custom_list li::before {
+    content: "\f111";
+    font-family: "Font Awesome 5 Pro";
+    font-weight: 900;
+    color: var(--primary);
+    margin-right: 12px;
+    font-size: 100%;
+    line-height: 28px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.custom_list li p {
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.custom_list li p strong {
+    display: inline-block;
+    margin-bottom: 10px;
+}
